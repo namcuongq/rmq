@@ -9,6 +9,7 @@ import (
 
 // Package provides headers and handling functions around payloads
 type Package struct {
+	TaskName   string
 	Payload    string
 	CreatedAt  time.Time
 	Queue      interface{} `json:"-"`
